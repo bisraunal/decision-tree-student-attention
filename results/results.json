@@ -1,0 +1,129 @@
+{
+  "dataset": {
+    "name": "Students Attention Detection Dataset (Hossen & Uddin, 2023)",
+    "n_samples": 4000,
+    "n_features": 19,
+    "class_distribution": {
+      "0": 2314,
+      "1": 1686
+    }
+  },
+  "preprocessing": {
+    "pose_encoding": "one-hot",
+    "scaling": "MaxAbsScaler",
+    "face_con_normalized_to_01": true,
+    "train_test_split": "80/20 stratified, random_state=42"
+  },
+  "baseline_metrics": {
+    "accuracy": 0.99875,
+    "precision": 1.0,
+    "recall": 0.9970326409495549,
+    "f1": 0.9985141158989599,
+    "roc_auc": 0.9985163204747775,
+    "specificity": 1.0
+  },
+  "best_hyperparameters": {
+    "class_weight": "None",
+    "criterion": "gini",
+    "max_depth": "None",
+    "min_samples_leaf": "1",
+    "min_samples_split": "20"
+  },
+  "best_cv_score_f1": 0.9977722755205496,
+  "final_test_metrics": {
+    "accuracy": 0.99875,
+    "precision": 1.0,
+    "recall": 0.9970326409495549,
+    "specificity": 1.0,
+    "f1": 0.9985141158989599,
+    "roc_auc": 0.9984906845434561
+  },
+  "five_fold_cv_scores": {
+    "accuracy": {
+      "mean": 0.999,
+      "std": 0.0004999999999999894,
+      "scores": [
+        0.99875,
+        0.99875,
+        0.99875,
+        1.0,
+        0.99875
+      ]
+    },
+    "precision": {
+      "mean": 0.9994082840236687,
+      "std": 0.001183431952662728,
+      "scores": [
+        1.0,
+        1.0,
+        0.9970414201183432,
+        1.0,
+        1.0
+      ]
+    },
+    "recall": {
+      "mean": 0.9982213404034906,
+      "std": 0.0014522730172654432,
+      "scores": [
+        0.9970414201183432,
+        0.9970326409495549,
+        1.0,
+        1.0,
+        0.9970326409495549
+      ]
+    },
+    "f1": {
+      "mean": 0.9988130537669914,
+      "std": 0.0005934763825335896,
+      "scores": [
+        0.9985185185185185,
+        0.9985141158989599,
+        0.9985185185185185,
+        1.0,
+        0.9985141158989599
+      ]
+    },
+    "roc_auc": {
+      "mean": 0.9988908420906648,
+      "std": 0.0005767822102872599,
+      "scores": [
+        0.9985207100591715,
+        0.9985163204747775,
+        0.9989200863930885,
+        1.0,
+        0.9984970935262865
+      ]
+    }
+  },
+  "confusion_matrix": [
+    [
+      463,
+      0
+    ],
+    [
+      1,
+      336
+    ]
+  ],
+  "feature_importances": {
+    "face_x": 0.0,
+    "face_y": 0.0,
+    "face_w": 0.0,
+    "face_h": 0.0,
+    "no_of_hand": 0.0,
+    "phone_h": 0.0,
+    "phone_x": 0.0,
+    "phone": 0.0,
+    "phone_con": 0.0,
+    "pose_down": 0.0,
+    "phone_w": 0.0,
+    "pose_left": 0.0,
+    "pose_right": 0.0,
+    "no_of_face": 0.010219961352783523,
+    "face_con": 0.015033167354822272,
+    "pose_x": 0.06645345425581596,
+    "pose_y": 0.0993021490873049,
+    "phone_y": 0.3168545465503328,
+    "pose_forward": 0.49213672139894055
+  }
+}

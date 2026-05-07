@@ -1,0 +1,17 @@
+Classification Report (Tuned Decision Tree)
+======================================================================
+
+              precision    recall  f1-score   support
+
+   Attentive     0.9978    1.0000    0.9989       463
+ Inattentive     1.0000    0.9970    0.9985       337
+
+    accuracy                         0.9988       800
+   macro avg     0.9989    0.9985    0.9987       800
+weighted avg     0.9988    0.9988    0.9987       800
+
+Confusion Matrix:
+[[463   0]
+ [  1 336]]
+  TN=463  FP=0
+  FN=1  TP=336
