@@ -5,7 +5,7 @@
 > **Yöntem:** Decision Tree (Karar Ağacı)  
 > **Veri Seti:** [Students Attention Detection Dataset](https://data.mendeley.com/datasets/smzggbnkd2/1) (Hossen & Uddin, 2023)
 
-## Proje Özeti
+ ## Proje Özeti
 
 Bu projede, çevrimiçi derslere katılan öğrencilerin webcam görüntülerinden çıkarılan davranışsal özellikler (yüz tespiti, el takibi, baş duruşu, telefon tespiti) kullanılarak **dikkatli/dikkatsiz** sınıflandırması yapılmıştır. Karar Ağacı yöntemi uygulanmış ve **%99.88 test doğruluğu** elde edilmiştir.
 
